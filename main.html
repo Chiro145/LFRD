@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <ul class="nav">
+        <audio id = "beep" preload="auto">
+            <source scr="effect01.mp3">
+        </audio>
+        <audio id = "SPT" preload="auto">
+            <source src="sound01.mp3">
+        </audio>
+        <audio id = "LF01" preload="auto">
+            <source src="sound.mp3">
+        </audio>
+    </ul>
+    <script>
+        //LF01.play();
+        //SPT.play();
+        //beep.play();
+    </script>
+    <style>
+    @keyframes spin{
+        from { transform: rotateZ(0deg); }
+        to { transform : rotateZ(360deg) }
+    }
+    .spinning{
+        animation: spin 150s infinite;
+    }
+    </style>
+    <audio src="sound01.mp3" autoplay loop ></audio>
+    <head>
+        <meta charset="utf-8">
+        <title>Radio Beta 0.83v</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body>
+        <section>
+            <video src="background.mp4" autoplay muted loop></video>
+        <div class="sphere">
+            <video src="MainBG.mp4" autoplay muted loop class = "spinning"></video>
+        </div>
+        </section>
+    </body>
+</html>
